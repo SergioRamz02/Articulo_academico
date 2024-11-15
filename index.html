@@ -151,6 +151,163 @@
 <!--Resultados-->
 <section id="resultados">
 <h2>Resultados</h2>
+<p>Para determinar la relación q/m, se realizaron tres tomas fotográficas con diferentes niveles de saturación durante el funcionamiento del experimento, 
+   lo que permitió obtener tres valores distintos de los radios de las trayectorias de los electrones. A continuación, se presenta la correspondencia entre 
+   cada radio y su nivel de saturación, así como el programa utilizado para el análisis.</p>
+
+<!--Creación de tabla de los radios de  la circunferencia-->
+   <table border="1">
+    <caption>Tabla 1: Radios de las circunferencias</caption>
+    <thead>
+      <tr>
+        <th>Radios</th>
+        <th>Nivel de saturación</th>
+        <th>Programas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R<sub>1</sub></td>
+        <td>3</td>
+        <td>Geogebra</td>
+      </tr>
+      <tr>
+        <td>R<sub>2</sub></td>
+        <td>4</td>
+        <td>IDL</td>
+      </tr>
+      <tr>
+        <td>R<sub>3</sub></td>
+        <td>5</td>
+        <td>IDL</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!--Creación de la tabla de corriente contra los diferentes radios de circunferencia-->
+<p>A continuación se muestra una tabla con los valores obtenidos de los radios a diferentes valores de corrientes</p>
+  <table border="1">
+    <caption>Tabla 2: Variación de los radios con respecto a la corriente suministrada</caption>
+    <thead>
+      <tr>
+        <th>I (A)</th>
+        <th>R<sub>1</sub> (cm)</th>
+        <th>R<sub>2</sub> (cm)</th>
+        <th>R<sub>3</sub> (cm)</th>
+        <th>R<sub>promedio</sub> (cm)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0.805</td>
+        <td>5.97</td>
+        <td>5.98</td>
+        <td>5.85</td>
+        <td>5.933</td>
+      </tr>
+      <tr>
+        <td>0.905</td>
+        <td>5.47</td>
+        <td>5.7</td>
+        <td>5.5</td>
+        <td>5.557</td>
+      </tr>
+      <tr>
+        <td>1.005</td>
+        <td>4.93</td>
+        <td>5.58</td>
+        <td>5.04</td>
+        <td>5.183</td>
+      </tr>
+      <tr>
+        <td>1.105</td>
+        <td>4.53</td>
+        <td>5.18</td>
+        <td>4.65</td>
+        <td>4.787</td>
+      </tr>
+      <tr>
+        <td>1.205</td>
+        <td>4.24</td>
+        <td>4.62</td>
+        <td>4.43</td>
+        <td>4.43</td>
+      </tr>
+      <tr>
+        <td>1.305</td>
+        <td>4.06</td>
+        <td>4.38</td>
+        <td>4.16</td>
+        <td>4.20</td>
+      </tr>
+      <tr>
+        <td>1.405</td>
+        <td>3.74</td>
+        <td>3.82</td>
+        <td>3.92</td>
+        <td>3.827</td>
+      </tr>
+      <tr>
+        <td>1.505</td>
+        <td>3.49</td>
+        <td>3.67</td>
+        <td>3.79</td>
+        <td>3.65</td>
+      </tr>
+      <tr>
+        <td>1.605</td>
+        <td>3.24</td>
+        <td>3.34</td>
+        <td>3.59</td>
+        <td>3.39</td>
+      </tr>
+      <tr>
+        <td>1.705</td>
+        <td>3.13</td>
+        <td>3.11</td>
+        <td>3.46</td>
+        <td>3.233</td>
+      </tr>
+      <tr>
+        <td>1.805</td>
+        <td>2.95</td>
+        <td>3.02</td>
+        <td>3.32</td>
+        <td>3.097</td>
+      </tr>
+    </tbody>
+  </table> 
+
+<p>De la tabla 2, podemos observar que cuando la corriente aumenta, el radio de la circunferencia disminuye,
+    por lo que los radios son inversamente proporcionales a la corriente.</p>
+<p>Para determinar el valor de la relación q/m, es necesario encontrar una relación entre R e I, 
+    para lo cual consideremos:</p>
+    <p>q/m=2V/R<sup>2</sup>B<sup>2</sup>=250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup>I<sup>2</sup></p>
+  <p>Porlo que</p>
+  <p>I<sup>2</sup>(q/m)=250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup></p>
+<p>Para el experimento desarrollado en el laboratorio de Física, tenemos:</p>
+<ul>
+    <li><p>V=250 volts</p></li>
+    <li><p>r=15 cm=0.15m</p></li>
+    <li><p>N=130 espiras</p></li>
+    <li><p>μ<sub>0</sub>=4π&times;10<sup>-7</sup>Teslas</p></li>
+</ul>
+<p>Sustituyendo los valores y definiendo una constante <b>k</b>, tenemos</p>
+<p>k = 250Vr<sup>2</sup>/64(μ<sub>0</sub>N)<sup>2</sup> = 7.904&times;10<sup>8</sup>(AmC)<sup>2</sup>/kg</p>
+<p>Por lo tanto</p>
+<p>I<sup>2</sup>(q/m) = k/R<sup>2</sup></p>
+<p>Entonces, para determinar q/m, es necesario graficar I<sup>2</sup> vs k/R<sup>2</sup> y ajustar los puntos
+   a una línea recta, tal y como se muestra en la figura 3</p>
+
+<figure>
+    <img src="" alt="Gráfica" width="" height="">
+    <figcaption>Figura 3. Representación gráfica de I<sup>2</sup> vs k/R<sup>2</sup></figcaption>
+</figure>
+
+<p>Para graficar tomamos a x=I<sup>2</sup> ; y=k/R<sup>2</sup>, ajustando a un modelo lineal, tenemos</p>
+<p>y = ax + b = (1.978&times;10<sup>11</sup>C/kg)x + 5.26&times;10<sup>10</sup>A<sup>2</sup>C/kg</p>
+<p>De la expresión anterior concluimos</p>
+<p>|q|/m = 1.978&times;10<sup>11</sup>C/kg</p>
 
 
 </section>
