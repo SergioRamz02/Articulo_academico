@@ -34,10 +34,10 @@
 <!--Sección de resumen-->
 <section id="resumen">
 <h2>Resumen</h2>
-<p>El desarrollo de esta experimentación se enfocó en la determinación de la relación (<sup>q</sup>/<sub>m</sub>) del electrón 
-    mediante el uso del equipo de Thomson, fuentes de poder, voltímetros y multímetros. Se realizaron mediciones de los radios de las circunferencias utilizando fotografías tomadas en el plano de la trayectoria, 
-    manteniendo fijo el voltaje y variando la corriente. El valor se obtuvo con el uso de los programas IDL y GeoGebra, obteniendo que
-    <sup>|q|</sup>/<sub>m</sub>=1.978&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub> y un error porcentual e<sub>%</sub>=12.46%. </p> 
+<p>El desarrollo de esta experimentación se enfocó en la determinación de la relación <sup>q</sup>/<sub>m</sub> del electrón 
+   mediante el uso del equipo de Thomson, fuentes de poder, voltímetros y multímetros. Se realizaron mediciones de los radios de las circunferencias utilizando fotografías tomadas en el plano de la trayectoria, 
+   manteniendo fijo el voltaje y variando la corriente. </p>
+<p>El valor se obtuvo con el uso de los programas <b>IDL</b> y <b>GeoGebra</b>, obteniendo que <sup>|q|</sup>/<sub>m</sub> = 1.978&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub> y un error porcentual e<sub>%</sub> = 12.46%. </p> 
 </section>
 
 <!--Sección de Palabras claves-->
@@ -49,12 +49,15 @@
 <!--Introducción-->
 <section id="introducción">
 <h2>Introducción</h2>
+
+<!--Hechos historicos sobre el descubrimiento de los electrones-->
 <p>A finales del siglo XIX, se logró una descripción unificada de los fenómenos electromagnéticos, estableciendo que la luz se genera por la vibración de cargas eléctricas. 
-    Sin embargo, esto planteó preguntas sobre los átomos, principalmente: si los átomos emiten luz, entonces, ¿existe algo que vibre dentro de ellos? 
-    Esta interrogante fue respondida gracias al descubrimiento de Thomson.</p>
-    <p>En su experimentación, Thomson determinó que la relación <sup>q</sup>/<sub>m</sub>=-1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub> era mucho menor que la del átomo de hidrógeno. 
-        Además, este cociente no variaba al utilizar electrodos de diferentes metales para generar los rayos. Con esto, Thomson descubrió que los átomos están formados por partículas cargadas negativamente, 
-        a las cuales llamó electrones, rompiendo así la idea de que el átomo era indivisible y resolviendo una de las grandes cuestiones de esa época.</p>
+   Sin embargo, esto planteó preguntas sobre los átomos, principalmente: si los átomos emiten luz, entonces, ¿existe algo que vibre dentro de ellos? 
+   Esta interrogante fue respondida gracias al descubrimiento de Thomson.</p>
+
+<p>En su experimentación, Thomson determinó que la relación <sup>q</sup>/<sub>m</sub> = -1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub> era mucho menor que la del átomo de hidrógeno. 
+   Además, este cociente no variaba al utilizar electrodos de diferentes metales para generar los rayos. Con esto, Thomson descubrió que los átomos están formados por partículas cargadas negativamente, 
+   a las cuales llamó electrones, rompiendo así la idea de que el átomo era indivisible y resolviendo una de las grandes cuestiones de esa época.</p>
 </section>
 
 <!--Marco teórico-->
@@ -64,37 +67,54 @@
 <p>En 1884, el físico Joseph John Thomson se dedicó a investigar la naturaleza de los rayos catódicos mediante el uso de un tubo de rayos catódicos.</p>
 
 <p>Los tubos de rayos catódicos son tubos de vidrio sellados, en los cuales se ha extraído la mayor parte del aire. Al aplicar un alto voltaje entre los electrodos, 
-    ubicados en los extremos del tubo, se genera un rayo de partículas que fluye del cátodo (electrodo cargado negativamente) al ánodo (electrodo cargado positivamente).</p>
+   ubicados en los extremos del tubo, se genera un rayo de partículas que fluye del cátodo (electrodo cargado negativamente) al ánodo (electrodo cargado positivamente).</p>
 
 <p>Para su estudio, Thomson colocó el tubo de rayos catódicos entre dos placas metálicas, a las cuales se les aplicaba una diferencia de potencial. 
    Observó que el rayo se desviaba alejándose de la placa cargada negativamente, lo que le permitió inferir que estaba compuesto por partículas cargadas negativamente. 
    Además, Thomson utilizó dos bobinas que generaban un campo magnético B y observó que este también desviaba los rayos. Como los rayos se desviaban debido al campo magnético, 
    producían un movimiento circular con una velocidad v perpendicular al campo. Entonces, se debía cumplir la siguiente ecuación:</p>
-<p>F<sub>B</sub>=qvB=mv<sup>2</sup>/R= F<sub>C</sub></p>
+
+   <!--Igualdad entre la fuerza mágnetica y la fuerza centrípeta-->
+   <p>F<sub>B</sub> = qvB = mv<sup>2</sup>/R = F<sub>C</sub></p>
 <p>donde</p>
 <ul>
     <li><p>R el radio de la circunferencia.</p></li>
     <li><p>F<sub>B</sub> la fuerza mágnetica</p></li>
     <li><p>F<sub>C</sub> la fuerza centrípeta</p></li>
 </ul>
-<p>obtenemos</p>
-<p>v=qRB/m</p>
+<p>de la expresión anterior, obtenemos</p>
+<!--Despeje de la magnitud de la velocidad-->
+<p>v = qRB/m .</p>
+
 <p>Luego, considerando la conservación de la energía cinética con el potencial electrostático, y dado que los campos eran uniformes:</p>
-<p>mv<sup>2</sup>/2=qV</p>
+<!--Conservación de la energía-->
+<p>mv<sup>2</sup>/2 = qV</p>
+
 <p>sustituyendo la expresión para v y despejando q/m, tenemos</p>
-<p>q/m=2V/R<sup>2</sup>B<sup>2</sup></p>
+
+<!--Despeje de la relación q/m y sustitución de la expresión para la magnitud de la velocidad-->
+<p> <sup>q</sup>/<sub>m</sub> = 2V/R<sup>2</sup>B<sup>2</sup> .</p>
+
 <p>Como las bobinas cumplen con la geometría de Helmholtz, se tiene:</p>
-<p>B=8μ<sub>0</sub>NI /(125r)<sup>1/2</sup></p>
+
+<!--Campo magnetico para una bobina con N espiras y con geometría de Helmholtz-->
+<p>B = 8μ<sub>0</sub>NI /(125r)<sup>1/2</sup></p>
+
 <p>donde</p>
 <ul>
     <li><p>r es el radio de las bobinas</p></li>
     <li><p>I es la corriente suministrada</p></li>
     <li><p>N es el número de espiras</p></li>
+    <li><p>μ<sub>0</sub> se conoce como la permeabilidad del vacío</p></li>
 </ul>
-<p>Con estas expersiones, en su experimento encontro que</p>
-<p><sup>|q|</sup>/<sub>m</sub>=1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub></p>
+<p>Con estas expersiones, en su experimento, Thomson encontro que</p>
+
+<!--Valor de la relación q/m reportado por Thomson-->
+<p><sup>|q|</sup>/<sub>m</sub> = 1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub></p>
+
+<!--Modelo del experimento de Thomson-->
 <figure>
-    <img src="https://i.imgur.com/CNxQfTj.png" alt="Experimento de Thomson" width="100" height="50">
+    <img src="https://i.postimg.cc/tCz786nK/Modelo-del-dise-o-experimental.png" alt="Modelo del Experimento de Thomson" width="450px">
     <figcaption>Figura 1. Arreglo experimental de Thomson.</figcaption>
 </figure>
 
@@ -104,6 +124,8 @@
 <!--Desarrollo Experimental-->
 <section id="experimental">
 <h2>Desarrollo experimental</h2>
+
+<!--Equipo de laboratorio-->
 <p>Para desarrollar el experimento en un laboratorio de Física se necesitan los siguientes equipos:</p>
 <ul>
     <li><p>Fuente de poder</p></li>
@@ -114,17 +136,23 @@
     <li><p>Cámara fotográfica</p></li>
     <li><p>Tripie</p></li>
 </ul>
-<p>En la figura 2 se muestra el equipo de Thomson, el cual se conformade los siguinetes elementos:</p>
+
+<!--Elementos que componen al equipo de Thomson-->
+<p>En la figura 2 se muestra el equipo de Thomson, el cual se conforma de los siguinetes elementos:</p>
 <ul>
     <li><p>Tubo de rayos filiforme (estos se generan mediante el proceso de termoiónico sobre un filamento de tungsteno)</p></li>
     <li><p>Bobinas de Helmholtz</p></li>
     <li><p>Dispositivo de medición</p></li>
     <li><p>Panel de conexiones</p></li>
 </ul>
+
+<!--Imagen del equipo de Thomson del laboratorio-->
 <figure>
-    <img src="" alt="Equipo de Thomson" width="" height="">
+    <img src="https://i.postimg.cc/MGKXmpsy/Experimento-de-Thomson.png" alt="Equipo de Thomson" width="475px">
     <figcaption>Figura 2. Equipo de Thomson</figcaption>
 </figure>
+
+<!--Instrucciones para una mejor obtención de resultados-->
 <p>A continuación se describen los puntos que se tomaron en cuenta al momento de realizar la experimentación:</p>
 <ol>
     <li><b>Reducción de errores:</b><p>Para disminuir el error porcentual debido a errores de paralaje y magnificación 
@@ -132,7 +160,7 @@
     <li><b>Captura de imágenes:</b>
         <ul>
            <li><p>Se tomaron fotografías de cada una de las trayectorias circulares generadas por las corrientes suministradas.</p></li>
-           <li><p>Se varió la corriente entre 0.8 y 1.8 A, manteniendo un voltaje fijo.</p></li>
+           <li><p>Se varió la corriente entre 0.805 y 1.805 A, manteniendo un voltaje fijo.</p></li>
            <li><p>Se calibró la cámara y se colocó en el plano de la trayectoria del haz de electrones.</p></li>
         </ul>
     </li>
@@ -155,7 +183,7 @@
    lo que permitió obtener tres valores distintos de los radios de las trayectorias de los electrones. A continuación, se presenta la correspondencia entre 
    cada radio y su nivel de saturación, así como el programa utilizado para el análisis.</p>
 
-<!--Creación de tabla de los radios de  la circunferencia-->
+<!--Creación de la tabla de los radios de  la circunferencia obtenidos mediante IDL y GeoGebra-->
    <table border="1">
     <caption>Tabla 1: Radios de las circunferencias</caption>
     <thead>
@@ -278,36 +306,49 @@
     </tbody>
   </table> 
 
+  <!--Relación entre corriente y radio de los datos de la tabla-->
 <p>De la tabla 2, podemos observar que cuando la corriente aumenta, el radio de la circunferencia disminuye,
     por lo que los radios son inversamente proporcionales a la corriente.</p>
-<p>Para determinar el valor de la relación q/m, es necesario encontrar una relación entre R e I, 
+
+<p>Para determinar el valor de la relación <sup>q</sup>/<sub>m</sub>, es necesario encontrar una relación entre R e I, 
     para lo cual consideremos:</p>
-    <p>q/m=2V/R<sup>2</sup>B<sup>2</sup>=250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup>I<sup>2</sup></p>
+
+<!--Empleo de la ecuación que relaciona q/m con la corriente I y el radio R-->
+    <p> <sup>q</sup>/<sub>m</sub> = 2V/R<sup>2</sup>B<sup>2</sup> = 250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup>I<sup>2</sup></p>
+
   <p>Porlo que</p>
-  <p>I<sup>2</sup>(q/m)=250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup></p>
+<!--Despeje de la corriente I como función de R-->
+  <p>I<sup>2</sup>(<sup>q</sup>/<sub>m</sub>) = 250Vr<sup>2</sup>/64(Rμ<sub>0</sub>N)<sup>2</sup></p>
 <p>Para el experimento desarrollado en el laboratorio de Física, tenemos:</p>
 <ul>
-    <li><p>V=250 volts</p></li>
-    <li><p>r=15 cm=0.15m</p></li>
-    <li><p>N=130 espiras</p></li>
-    <li><p>μ<sub>0</sub>=4π&times;10<sup>-7</sup>Teslas</p></li>
+    <li><p>V = 250 volts</p></li>
+    <li><p>r = 15 cm=0.15m</p></li>
+    <li><p>N = 130 espiras</p></li>
+    <li><p>μ<sub>0</sub> = 4π&times;10<sup>-7</sup>Teslas</p></li>
 </ul>
 <p>Sustituyendo los valores y definiendo una constante <b>k</b>, tenemos</p>
+<!--Reducción de constantes-->
 <p>k = 250Vr<sup>2</sup>/64(μ<sub>0</sub>N)<sup>2</sup> = 7.904&times;10<sup>8</sup>(AmC)<sup>2</sup>/kg</p>
+
 <p>Por lo tanto</p>
-<p>I<sup>2</sup>(q/m) = k/R<sup>2</sup></p>
+<!--Formula para graficar la corriente I como función de R-->
+<p>I<sup>2</sup>(<sup>q</sup>/<sub>m</sub>) = k/R<sup>2</sup></p>
+
 <p>Entonces, para determinar q/m, es necesario graficar I<sup>2</sup> vs k/R<sup>2</sup> y ajustar los puntos
    a una línea recta, tal y como se muestra en la figura 3</p>
 
+<!--Representación gráfica de la formula que relaciona I con R -->
 <figure>
-    <img src="" alt="Gráfica" width="" height="">
+    <img src="https://i.postimg.cc/d0mmL3hr/Representaci-n-gr-fica.png" alt="Representación Gráfica" width="800px">
     <figcaption>Figura 3. Representación gráfica de I<sup>2</sup> vs k/R<sup>2</sup></figcaption>
 </figure>
 
-<p>Para graficar tomamos a x=I<sup>2</sup> ; y=k/R<sup>2</sup>, ajustando a un modelo lineal, tenemos</p>
+<!--Ajuste de los puntos para obtener q/m-->
+<p>Para graficar tomamos x = I<sup>2</sup> ; y = k/R<sup>2</sup>, ajustando a un modelo lineal, tenemos</p>
 <p>y = ax + b = (1.978&times;10<sup>11</sup>C/kg)x + 5.26&times;10<sup>10</sup>A<sup>2</sup>C/kg</p>
 <p>De la expresión anterior concluimos</p>
-<p>|q|/m = 1.978&times;10<sup>11</sup>C/kg</p>
+<!--Valor de q/m relacionando la ecuación de una recta con la forma gráfica-->
+<p><sup>|q|</sup>/<sub>m</sub> = 1.978&times;10<sup>11</sup>C/kg</p>
 
 
 </section>
@@ -317,12 +358,12 @@
 <h2>Análisis</h2>
 
 <p>La elección de la relación entre las corrientes y los radios se hizo para simplificar y obtener con mayor precisión el valor de la relación 
-q/m. Al considerar el promedio de los valores para cada radio, se facilita evaluar si el experimento se realizó correctamente, ya que los puntos 
+  <sup>|q|</sup>/<sub>m</sub>. Al considerar el promedio de los valores para cada radio, se facilita evaluar si el experimento se realizó correctamente, ya que los puntos 
 experimentales deberían seguir una tendencia lineal.</p>
 
 <p>Con los valores obtenidos, calculamos el error porcentual, lo que permite verificar si el método elegido fue efectivo 
   para reducir los errores. A continuación, se presentan el error porcentual, considerando que el valor teórico determinado por Thomson es:</p>
-  <sup>|q|</sup>/<sub>m</sub>=1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub>
+  <sup>|q|</sup>/<sub>m</sub> = 1.7588&times;10<sup>11</sup> <sup>C</sup>/<sub>kg</sub>
 
 <!--Definición del error porcentual-->
 <h4>Definición del error porcentual</h4>
@@ -364,11 +405,12 @@ experimentales deberían seguir una tendencia lineal.</p>
   <a href="http://bibliotecadigital.ilce.edu.mx/sites/ciencia/volumen2/ciencia3/068/htm/sec_6.htm" target="_blank">
     El electrón: Thomson y Millikan</a></p>
 
+<p><em>Las fuentes aquí citadas fueron empleadas para mejorar la introducción y marco teórico del artículo</em></p>
 </section>
 
 <!--Pie de Página-->
 <section>
-    <p><b><em>2024. Sergio Emmanuel Ramírez Escamilla. Todos los derechos son propiedad del autor y del IPN</em></b></p>
+    <p><b><em>2024. Sergio Emmanuel Ramírez Escamilla. Todos los derechos son propiedad del autor y del IPN.</em></b></p>
 </section>
 
 
